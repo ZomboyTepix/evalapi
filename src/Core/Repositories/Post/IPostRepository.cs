@@ -1,10 +1,9 @@
-using System.Collections.Generic;
-using System.Threading.Tasks;
+
 using EvalApi.Src.Models.Post;
 
-namespace EvalApi.Src.Core.Services.Post
+namespace EvalApi.Src.Core.Repositories.Post
 {
-    public interface IPostService
+    public interface IPostRepository
     {
         Task<PostModel> CreatePostAsync(CreatePostModel createPostModel);
         Task<PostModel> GetPostByIdAsync(int postId);
